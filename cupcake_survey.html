@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>Cupcake Survey</title>
+    <meta charset="UTF-8"
+<meta name="viewport" content="width=device, user-scalable=false;">
+<style>
+body {
+    color: white;
+    background-color: pink;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white; 
+}
+h1{
+  padding: 80px 40px 560px 40px;
+  }
+
+/*#title {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white; 
+}*/
+.surveytitle {
+  background-repeat: no-repeat;
+  background-image: url(cupcake-photos/cupcake.jpg);
+  width: 460px;
+  }
+  @media only screen and (min-width: 400px) {
+    .surveytitle {
+      --min-height: 100%;
+      background-image: url(cupcake-photos/cupcake.jpg);
+      background-size: contain;
+      width: 460px;
+      
+      /*background-attachment: fixed;
+      width: 460px;*/
+    }
+  }
+  
+  
+
+/*.surveydesc {
+  background-repeat: no-repeat;
+  background-image: url(cupcake-photos/cupcake.jpg);
+  width: 460px;
+  }*/
+  @media only screen and (min-width: 400px) {
+    .surveydesc {
+      --min-height: 100%;
+      background-image: url(cupcake-photos/cupcake.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 460px;
+      
+  
+    }
+  }
+  
+  
+
+
+</style>
+
+</head>
+
+
+  
+<body>
+ <div class="surveytitle">
+  <h1 id="title">Cupcake Survey</h1>
+</div>
+<div class="surveydesc">
+  <p id="description">This is a short description of the survey.</p>
+  <img src="cupcake-photos/cupcake.jpg" alt="cupcake" width="460">
+</div>
+  <form id="survey-form">
+   <!--<form action="/action_page.php">-->
+    <label for="name" id="name-label">First Name:</label><br>
+   
+    <input 
+           type="text" 
+           id="name" 
+           name="name"
+           placeholder="First Name"
+           required><br>
+    <!--<form action="/action_page.php">-->
+    <label for="lastname" id="lastname-label">Last Name:</label><br>
+    <input
+           type="text"
+           id="lastname"
+           name="lastname"
+           placeholder="Last Name"
+           required><br>
+   <!--<form action="/action_page.php">-->
+      <form id="email">
+        <label for="email" id="email-label">Email Address</label><br>
+        <!--<form action="/action_page.php">-->
+        <input type="email" id="email" required
+               placeholder="Email Address"><br>
+        <form id="number">
+          <label for="number" id="number-label">How many cupcakes do I want? (1-10)</label><br>
+          <!--<form action="/action_page.php">-->
+          <input type="number" id="number" name="tentacles"
+                 min="1" max="10"
+                 placeholder="1-10"><br>
+          <label for="cupcakeflavors">What is your favorite cupcake flavor?</label><br>
+          <select name="cupcake flavors" id="dropdown">
+            <option value="flavor1">Flavor1</option>
+        <option value="flavor2">Flavor2</option>
+            <option value="flavor3">Flavor3</option>
+            <option value="flavor4">Flavor4</option>
+            <option value="flavor5">Flavor5</option>
+            <option value="flavor6">Flavor6 with a very long name</option></select>
+            <br>
+        <!--<input type="submit" value="Submit">-->
+          <p>When is your favorite time to eat cupcakes?</p>
+          <!--<form action="/action_page.php">-->
+          <input type="radio" id="breakfast" name="favcuptime" value="breakfast">
+          <label for="breakfast">breakfast<label><br>
+            <input type="radio" id="lunch" name="favcuptime" value="lunch">
+          <label for="lunch">lunch<label><br>
+            <input type="radio" id="dinner" name="favcuptime" value="dinner">
+          <label for="anytime">anytime<label><br>
+            <input type="radio" id="anytime" name="favcuptime" value="anytime">
+          <label for="anytime">anytime<label><br>
+            <p>Check all your favorite cupcake toppings.</p>
+            <!--<form action="/action_page.php">-->
+            <input type="checkbox" name="topping1" value="chocolate sprinkles">
+            <label for="topping">chocolate sprinkles</label><br>
+            <input type="checkbox" name="topping2" value="rainbow sprinkles">
+            <label for="topping">rainbow sprinkles</label><br>
+            <input type="checkbox" name="topping3" value="nuts">
+            <label for="topping">nuts</label><br>
+            <input type="checkbox" name="topping4" value="candy">
+            <label for="topping">candy</label><br>
+            <input type="checkbox" name="topping4" value="frosting">
+            <label for="topping">frosting</label><br>
+            
+            <!--<form action="/action_page.php">-->
+            <p>Write a poem about your favorite cupcake</p>
+            
+            <textarea rows="4" cols="50"></textarea><br>
+            
+              
+            <input type="submit" id="submit">   
+    </form>
+  
+</body>
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>--->
